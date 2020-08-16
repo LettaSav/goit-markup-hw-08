@@ -1,0 +1,35 @@
+/* Logo */
+.logo,
+.whitelogo {
+  color: $title-text-color;
+
+  font-family: $secondary-font;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.bluesidelogo {
+  color: $accent-color;
+  font-style: normal;
+}
+
+.footer-logo {
+  margin-right: 69px;
+}
+
+.left-side-logo {
+  display: block;
+
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.whitelogo,
+.addresslink,
+.footer-sent {
+  color: $background-color;
+  font-style: normal;
+}

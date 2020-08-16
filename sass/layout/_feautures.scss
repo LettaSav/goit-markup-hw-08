@@ -1,0 +1,65 @@
+/* Features, What we are doing */
+.feauturesec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.features-list::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sputnik::before {
+  background-image: url(../img/sputnik1.svg);
+}
+.clocks::before {
+  background-image: url(../img/clocks1.svg);
+}
+.laptop::before {
+  background-image: url(../img/laptop1.svg);
+}
+.human::before {
+  background-image: url(../img/human1.svg);
+}
+.features .features-list + .features-list {
+  margin-left: 30px;
+}
+.features-text {
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+}
+.features .title,
+.picturetext {
+  margin-top: 0;
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.features-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+}
+.features > li > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.features {
+  display: flex;
+  align-items: center;
+}

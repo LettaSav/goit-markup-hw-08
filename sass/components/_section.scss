@@ -1,0 +1,53 @@
+/* Sections */
+
+.section-title {
+  color: $title-text-color;
+  margin-top: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section {
+  .button {
+    color: $title-text-color;
+    background-color: $backgroud-our-team;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    & {
+      border-color: transparent;
+
+      border-radius: 4px;
+      padding: 6px 22px;
+
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.section .button:hover,
+.section .button:focus {
+  color: $background-color;
+  background-color: $accent-color;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.section-descrp {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: $primary-text-color;
+}

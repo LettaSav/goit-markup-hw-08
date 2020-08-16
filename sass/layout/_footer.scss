@@ -1,0 +1,190 @@
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $fotter-color;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-join-us {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-join-us {
+  margin-right: 155px;
+}
+
+.footer-sent {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.footer-social-list .instagram {
+  background-image: url(../img/social-media/white-social-media/instagram.svg);
+}
+.footer-social-list .twitter {
+  background-image: url(../img/social-media/white-social-media/twitter.svg);
+}
+.footer-social-list .facebook {
+  background-image: url(../img/social-media/white-social-media/facebook.svg);
+}
+.footer-social-list .linkedin {
+  background-image: url(../img/social-media/white-social-media/linkedin.svg);
+}
+.footer-social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  min-width: 50px;
+
+  border-radius: 4px;
+  padding: 13px 0px 13px 29px;
+
+  align-items: center;
+  text-align: center;
+
+  color: $background-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+
+  font-family: $main-font;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-email-form input ::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+.footer-button::after {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/social-media/white-social-media/telegram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0;
+  margin-left: 10px;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.footer-email-form input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-bottom: 16px;
+
+  background: #2f303a;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+.address {
+  font-style: normal;
+}
+.addresslink {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.phone-address {
+  margin-bottom: 0;
+}
+.addresscolor {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us {
+  margin-bottom: 20px;
+}
+
+.social-network {
+  display: block;
+
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 0;
+  margin-left: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.mailing {
+  display: inline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.sign-sents {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.sign-sents-block {
+  flex-direction: column;
+}
