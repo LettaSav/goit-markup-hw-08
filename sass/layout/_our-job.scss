@@ -2,6 +2,10 @@
 .our-job {
   padding-top: 47px;
   padding-bottom: 94px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .examples .examples-list + .examples-list {
   margin-left: 30px;

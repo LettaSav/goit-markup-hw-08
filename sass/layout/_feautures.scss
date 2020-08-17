@@ -1,11 +1,17 @@
 /* Features, What we are doing */
 .feauturesec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  padding-top: 94px;
-  padding-bottom: 47px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 .features-list::before {
   display: block;
@@ -30,7 +36,9 @@
   background-image: url(../img/human1.svg);
 }
 .features .features-list + .features-list {
-  margin-left: 30px;
+  @media screen and (width: 1200px) {
+    margin-left: 30px;
+  }
 }
 .features-text {
   margin-right: 0;
@@ -60,6 +68,8 @@
   line-height: 1.7;
 }
 .features {
-  display: flex;
-  align-items: center;
+  @media screen and (width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
