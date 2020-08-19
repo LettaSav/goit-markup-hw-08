@@ -413,11 +413,28 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screena and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screena and (min-width: 760px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media screena and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Form */
@@ -790,37 +807,59 @@ ul {
 
 /* Hero */
 .hero .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-img {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/header-img.jpg");
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-img {
+    height: 600px;
+  }
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
-  height: 120px;
+  width: 360px;
+  height: 84px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero-button {
@@ -1056,11 +1095,18 @@ ul {
 
 /* Features, What we are doing */
 .feauturesec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feauturesec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .features-list::before {
@@ -1089,8 +1135,10 @@ ul {
   background-image: url(../img/human1.svg);
 }
 
-.features .features-list + .features-list {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .features .features-list + .features-list {
+    margin-left: 30px;
+  }
 }
 
 .features-text {
@@ -1121,9 +1169,11 @@ ul {
   line-height: 1.7;
 }
 
-.features {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .features {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* What we are doing */
@@ -1132,17 +1182,21 @@ ul {
   padding-bottom: 94px;
 }
 
-.examples .examples-list + .examples-list {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .examples .examples-list + .examples-list {
+    margin-left: 30px;
+  }
 }
 
 .examples-list {
   position: relative;
 }
 
-.examples {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .picturetext {
@@ -1166,15 +1220,19 @@ ul {
   background-color: #f5f4fa;
 }
 
-.our-people,
-.our-clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .our-people,
+  .our-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.our-people .team-list + .team-list {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .our-people .team-list + .team-list {
+    margin-left: 30px;
+  }
 }
 
 .profession {
@@ -1291,12 +1349,16 @@ ul {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #2f303a;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-join-us {
@@ -1310,8 +1372,10 @@ ul {
   align-items: center;
 }
 
-.footer-join-us {
-  margin-right: 155px;
+@media screen and (min-width: 1200px) {
+  .footer-join-us {
+    margin-right: 155px;
+  }
 }
 
 .footer-sent {

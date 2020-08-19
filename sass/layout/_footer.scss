@@ -2,11 +2,18 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: $fotter-color;
 
+  @media screen and (min-width: 480px) {
+  }
+
   .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
@@ -21,7 +28,9 @@
 }
 
 .footer-join-us {
-  margin-right: 155px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 155px;
+  }
 }
 
 .footer-sent {

@@ -3,12 +3,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  @media screen and (min-width: 1200px) {
+
     padding-top: 94px;
     padding-bottom: 47px;
   }
@@ -36,7 +35,7 @@
   background-image: url(../img/human1.svg);
 }
 .features .features-list + .features-list {
-  @media screen and (width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }
@@ -68,7 +67,7 @@
   line-height: 1.7;
 }
 .features {
-  @media screen and (width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }

@@ -7,12 +7,16 @@
 }
 .our-people,
 .our-clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .our-people .team-list + .team-list {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 .profession {
   margin-top: 0;

@@ -1,9 +1,14 @@
 /* Hero */
 .hero {
   .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
 }
 
@@ -11,7 +16,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -20,12 +25,16 @@
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
-  height: 120px;
+  width: 360px;
+  height: 84px;
   margin-left: auto;
   margin-right: auto;
 
@@ -33,11 +42,18 @@
 
   font-family: $main-font;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 .hero-button {
   min-width: 50px;
