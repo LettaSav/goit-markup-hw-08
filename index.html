@@ -14,11 +14,18 @@
     <!--Hat of website-->
     <header>
       <div class="top-navigation container">
-        <nav class="top-nav">
-          <a class="logo" href="./index.html" aria-label="Лого" lang="en">
+        <a class="logo" href="./index.html" aria-label="Лого" lang="en">
             <span class="bluesidelogo"> Web </span> Studio
           </a>
-          <ul class="site-nav">
+          <button type="button" class="menu-button" data-menu-button>
+            <svg  height="40" width="40" aria-label="переключатель мобильного меню">
+              <use  class="icon-cross-modal" href="./img/sprite/modal.svg#icon-close"></use>
+              <use class="icon-menu" href="./img/sprite/modal.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-modal" data-menu > 
+        <nav class="top-nav">
+             <ul class="site-nav">
             <li class="item">
               <a href="./index.html" class="link current"> Студия </a>
             </li>
@@ -37,12 +44,12 @@
             </a>
           </li>
           <li class="item">
-          
             <a href="tel:+380961111111" class="contacts">    <svg class="contacts-icon" width="10" height="14.94">
                    <use href="./img/sprite/sprite.svg#icon-phone1"></use>
                   </svg>  +38 096 111 11 11  </a>
           </li>
         </ul>
+          </div>
       </div>
     </header>
     <main>
@@ -56,7 +63,7 @@
           </div>
           <div  data-modal class="hero-form is-hidden">
           <form class="hero-form-block">
-             <button data-modal-close type="button" class="form-btn-close" > <svg width="11  " height="11" class="icon-cross">
+             <button data-modal-close type="button" class="form-btn-close" > <svg width="11" height="11" class="icon-cross">
                 <use href="./img/sprite/formsprite.svg#icon-cross"></use>
               </svg></button>
               
@@ -472,5 +479,6 @@
       </div>
     </footer>
      <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>
