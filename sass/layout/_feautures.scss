@@ -1,17 +1,4 @@
 /* Features, What we are doing */
-.feauturesec {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 94px;
-    padding-bottom: 47px;
-  }
-}
 .features-list::before {
   display: block;
   content: " ";
@@ -34,16 +21,11 @@
 .human::before {
   background-image: url(../img/human1.svg);
 }
-.features .features-list + .features-list {
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
-  }
-}
+
 .features-text {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
 }
 .features .title,
 .picturetext {
@@ -66,9 +48,38 @@
   font-size: 14px;
   line-height: 1.7;
 }
-.features {
-  @media screen and (min-width: 1200px) {
+
+@media screen and (max-width: 480px) {
+  .feauturesec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features-list .title {
+    text-align: center;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features .features-list + .features-list {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .featuresec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .features {
     display: flex;
     align-items: center;
+  }
+  .features-text {
+    width: 270px;
   }
 }

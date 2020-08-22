@@ -7,6 +7,7 @@
   height: 100%;
   z-index: 2;
   background: rgba(0, 0, 0, 0.2);
+  overflow: scroll;
 }
 .is-hidden {
   opacity: 0;
@@ -24,9 +25,9 @@
 
   padding: 40px;
   box-sizing: border-box;
-  width: 528px;
-  height: 581px;
 
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -104,7 +105,7 @@
 }
 
 .input {
-  width: 448px;
+  width: 370px;
   height: 40px;
 
   padding-left: 42px;
@@ -133,7 +134,7 @@
   fill: $accent-color;
 }
 .textarea-form {
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
 
@@ -182,8 +183,8 @@
 }
 .checkbox-sent {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
 }
 .form-btn {
   width: 200px;
@@ -212,4 +213,35 @@
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (max-width: 480px) {
+  .form-sent {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 767px) {
+}
+@media screen and (min-width: 1200px) {
+  .hero-form-block {
+    width: 528px;
+    height: 581px;
+  }
+  .form-sent {
+    line-height: 1.15;
+  }
+  .hero-form-block label,
+  .hero-form-block textarea {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .input {
+    width: 448px;
+  }
+  .textarea-form {
+    width: 448px;
+  }
+  .checkbox-sent {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
