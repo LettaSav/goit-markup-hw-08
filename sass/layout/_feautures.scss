@@ -1,4 +1,15 @@
 /* Features, What we are doing */
+.feauturesec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.features-list .title {
+  text-align: center;
+}
+.features-list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features-list::before {
   display: block;
   content: " ";
@@ -49,21 +60,12 @@
   line-height: 1.7;
 }
 
-@media screen and (max-width: 480px) {
-  .feauturesec {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .features-list .title {
-    text-align: center;
-  }
-  .features-list:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features .features-list + .features-list {
     margin-left: 30px;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
