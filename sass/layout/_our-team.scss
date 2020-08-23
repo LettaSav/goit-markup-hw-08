@@ -91,19 +91,40 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .our-people,
-  .our-clients {
+  .our-people {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .our-people .team-list + .team-list {
-    margin-left: 30px;
+  .our-people {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-list {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  .team-list:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .team-list:nth-child(-n + 2) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .our-team {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .team-list {
+    width: calc((100% - 4 * 30px) / 2);
+  }
+  .team-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-list:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .team-list {
+    width: 270px;
   }
 }

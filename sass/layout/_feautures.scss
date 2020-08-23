@@ -6,9 +6,6 @@
 .features-list .title {
   text-align: center;
 }
-.features-list {
-  width: 100%;
-}
 .features-list::before {
   display: block;
   content: " ";
@@ -33,9 +30,7 @@
 }
 
 .features-text {
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 .features .title,
 .picturetext {
@@ -67,7 +62,10 @@
 
 @media screen and (min-width: 768px) {
   .features-list {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  .features-list:nth-child(2n + 1) {
+    margin-right: 30px;
   }
   .featuresec {
     display: flex;
@@ -76,13 +74,23 @@
   }
   .features {
     display: flex;
-    align-items: center;
-  }
-  .features .features-list + .features-list {
-    margin-left: 30px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
   }
 }
+
 @media screen and (min-width: 1200px) {
+  .features-list {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+  .features-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-list:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
   .featuresec {
     padding-top: 94px;
     padding-bottom: 47px;
