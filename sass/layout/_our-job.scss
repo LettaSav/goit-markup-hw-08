@@ -1,35 +1,38 @@
 /* What we are doing */
-.our-job {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
-.examples .examples-list + .examples-list {
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .our-job {
+    display: none;
   }
 }
-.examples-list {
-  position: relative;
-}
-.examples {
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .our-job {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  .examples .examples-list + .examples-list {
+    margin-left: 30px;
+  }
+  .examples-list {
+    position: relative;
+  }
+  .examples {
     display: flex;
     justify-content: center;
   }
-}
-.picturetext {
-  position: absolute;
-  bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  .picturetext {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
 
-  margin-bottom: 0px;
-  width: 370px;
-  height: 70px;
+    margin-bottom: 0px;
+    width: 370px;
+    height: 70px;
 
-  color: $background-color;
-  background: rgba(47, 48, 58, 0.8);
+    color: $background-color;
+    background: rgba(47, 48, 58, 0.8);
 
-  text-transform: uppercase;
-  text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }

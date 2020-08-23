@@ -1,23 +1,11 @@
 /* Our team */
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $backgroud-our-team;
 }
-.our-people,
-.our-clients {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.our-people .team-list + .team-list {
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
-  }
-}
+
 .profession {
   margin-top: 0;
   margin-bottom: 16px;
@@ -39,7 +27,7 @@
   text-align: center;
 }
 .team-list {
-  width: 270px;
+  width: 354px;
 
   align-items: center;
   text-align: center;
@@ -91,4 +79,34 @@
 .team-sm-list :hover .team-social-icon,
 .team-sm-list :focus .team-social-icon {
   fill: $background-color;
+}
+@media screen and (max-width: 767px) {
+  .team-list {
+    width: calc((100% - 30px) / 2);
+  }
+  .team-list {
+    margin-right: auto;
+    margin-left: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-people,
+  .our-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-people .team-list + .team-list {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

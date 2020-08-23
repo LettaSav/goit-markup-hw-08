@@ -418,7 +418,7 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -1275,8 +1275,8 @@ ul {
   text-align: center;
 }
 
-.features-list:not(:last-child) {
-  margin-bottom: 30px;
+.features-list {
+  width: 100%;
 }
 
 .features-list::before {
@@ -1332,26 +1332,34 @@ ul {
   line-height: 1.7;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .features-list {
+    width: calc((100% - 30px) / 2);
+  }
+  .featuresec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features {
+    display: flex;
+    align-items: center;
+  }
   .features .features-list + .features-list {
     margin-left: 30px;
-  }
-  .features-list:not(:last-child) {
-    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .featuresec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 94px;
     padding-bottom: 47px;
-  }
-  .features {
-    display: flex;
-    align-items: center;
   }
   .features-text {
     width: 270px;
@@ -1359,62 +1367,47 @@ ul {
 }
 
 /* What we are doing */
-.our-job {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
-
-@media screen and (min-width: 1200px) {
-  .examples .examples-list + .examples-list {
-    margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .our-job {
+    display: none;
   }
 }
 
-.examples-list {
-  position: relative;
-}
-
 @media screen and (min-width: 1200px) {
+  .our-job {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  .examples .examples-list + .examples-list {
+    margin-left: 30px;
+  }
+  .examples-list {
+    position: relative;
+  }
   .examples {
     display: flex;
     justify-content: center;
   }
-}
-
-.picturetext {
-  position: absolute;
-  bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  margin-bottom: 0px;
-  width: 370px;
-  height: 70px;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
-  text-transform: uppercase;
-  text-align: center;
+  .picturetext {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0px;
+    width: 370px;
+    height: 70px;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 /* Our team */
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 1200px) {
-  .our-people,
-  .our-clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .our-people .team-list + .team-list {
-    margin-left: 30px;
-  }
 }
 
 .profession {
@@ -1437,7 +1430,7 @@ ul {
 }
 
 .team-list {
-  width: 270px;
+  width: 354px;
   align-items: center;
   text-align: center;
   background: #ffffff;
@@ -1487,6 +1480,38 @@ ul {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list {
+    width: calc((100% - 30px) / 2);
+  }
+  .team-list {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .team-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-people,
+  .our-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-people .team-list + .team-list {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Our Clients */
 .clients {
   padding-top: 94px;
@@ -1528,7 +1553,7 @@ ul {
 }
 
 /* Footer */
-.footer {
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 15px;
@@ -1537,7 +1562,7 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .container {
+  .footer .container .container {
     display: flex;
     align-items: baseline;
   }
