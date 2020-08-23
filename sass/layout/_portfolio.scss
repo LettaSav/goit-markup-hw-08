@@ -118,9 +118,14 @@
     align-items: center;
     justify-content: baseline;
   }
+  .portfolio-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   .portfolio-works {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
   .portfolio-works:nth-child(2n + 1) {
     margin-right: 30px;
