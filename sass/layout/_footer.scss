@@ -97,7 +97,6 @@
 }
 
 .footer-email-form input {
-  width: 100%;
   height: 50px;
   padding-top: 16px;
   padding-left: 15px;
@@ -111,7 +110,11 @@
   border-radius: 4px;
   outline: none;
 }
-
+.footer-logo,
+.footer-join-us,
+.sign-sent-block {
+  text-align: center;
+}
 .address {
   font-style: normal;
 }
@@ -180,11 +183,6 @@
 @media screen and (min-width: 480px) {
   .footer-input {
     width: 450px;
-  }
-  .footer-logo,
-  .footer-join-us,
-  .sign-sent-block {
-    text-align: center;
   }
 }
 @media screen and (max-width: 767px) {

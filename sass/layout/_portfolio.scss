@@ -28,7 +28,7 @@
 
 .portfolio-works {
   box-sizing: border-box;
-  width: 450px;
+  width: 354px;
   height: 404px;
 
   background: #ffffff;
@@ -103,19 +103,45 @@
   .portfolio-works {
     margin-bottom: 30px;
   }
+  .portfolio-button {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .button-port:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: baseline;
+  }
+
+  .portfolio-works {
+    width: calc((100% - 30px) / 2);
+  }
+  .portfolio-works:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .portfolio-works:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-section-style {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
   .portfolio-works-list {
     display: flex;
     flex-wrap: wrap;
   }
   .portfolio-works {
-    width: 370px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  .portfolio-works {
     margin-right: 30px;
 
     &:nth-child(3n) {
