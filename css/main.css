@@ -737,7 +737,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
 }
 
 .site-nav {
@@ -1482,9 +1481,6 @@ ul {
 
 @media screen and (max-width: 767px) {
   .team-list {
-    width: calc((100% - 30px) / 2);
-  }
-  .team-list {
     margin-right: auto;
     margin-left: auto;
   }
@@ -1558,14 +1554,11 @@ ul {
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer .container .container {
-    display: flex;
-    align-items: baseline;
-  }
+.footer {
+  background-color: #2f303a;
+  width: 100%;
 }
 
 .footer-join-us {
@@ -1577,12 +1570,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-join-us {
-    margin-right: 155px;
-  }
 }
 
 .footer-sent {
@@ -1612,10 +1599,6 @@ ul {
   margin-right: 10px;
 }
 
-.footer-form {
-  display: flex;
-}
-
 .footer-button {
   display: inline-flex;
   width: 200px;
@@ -1638,6 +1621,10 @@ ul {
   cursor: pointer;
 }
 
+.footer-input {
+  margin-bottom: 20px;
+}
+
 .footer-email-form input ::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -1655,7 +1642,6 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 0;
-  margin-left: 10px;
 }
 
 .footer-button::after:focus, .footer-button::after:hover {
@@ -1663,8 +1649,7 @@ ul {
 }
 
 .footer-email-form input {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-top: 16px;
   padding-left: 15px;
@@ -1741,8 +1726,72 @@ ul {
   color: #ffffff;
 }
 
-.sign-sents-block {
-  flex-direction: column;
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+  }
+  .footer-logo,
+  .footer-join-us,
+  .sign-sent-block {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo,
+  .footer-join-us {
+    margin-bottom: 60px;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer .container {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  .footer-email-form {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-join-us {
+    margin-right: 94px;
+  }
+  .footer-input {
+    width: 358px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .footer-logo,
+  .footer-join-us,
+  .sign-sent-block {
+    text-align: left;
+  }
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tablet-footer {
+    margin-bottom: 0;
+  }
+  .footer-form {
+    display: flex;
+  }
 }
 
 /* Portfolio */
@@ -1759,7 +1808,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-port:not(:last-child):not(:last-child) {
+.button-port:not(:last-child) {
   margin-right: 9px;
 }
 
@@ -1769,32 +1818,18 @@ ul {
 }
 
 .portfolio-section-style {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.portfolio-works-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .portfolio-works {
   box-sizing: border-box;
-  margin-right: 30px;
-  width: 370px;
+  width: 450px;
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-
-.portfolio-works:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-works:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
 }
 
 .portfolio-works:focus {
@@ -1855,5 +1890,36 @@ ul {
 .portfolio-works :focus .animation-text,
 .portfolio-works :hover .animation-text {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-works {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio-works {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section-style {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfolio-works-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-works {
+    width: 370px;
+    margin-right: 30px;
+  }
+  .portfolio-works:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio-works:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

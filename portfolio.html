@@ -271,93 +271,95 @@
     <!-- Footer-->
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo">
-          <div class="left-side-logo">
-            <a href="./index.html" lang="en" class="whitelogo">
-              <span class="bluesidelogo">Web</span> Studio
-            </a>
+        <div class="tablet-footer">
+          <div class="footer-logo">
+            <div class="left-side-logo">
+              <a href="./index.html" lang="en" class="whitelogo">
+                <span class="bluesidelogo">Web</span> Studio
+              </a>
+            </div>
+            <address class="address">
+              <ul class="address-list">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/Nmf4giyLiauQaxNX7"
+                    target="blank"
+                    class="addresslink"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@example.com"
+                    class="addresslink addresscolor"
+                  >
+                    info@example.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+380991111111"
+                    class="addresslink addresscolor phone-address"
+                  >
+                    +38 099 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="address">
-            <ul class="address-list">
-              <li>
+          <div class="footer-join-us">
+            <div class="join-us">
+              <b class="footer-sent">
+                ПРИСОЕДИНЯЙТЕСЬ
+              </b>
+            </div>
+            <ul class="footer-social">
+              <li class="footer-social-list">
                 <a
-                  href="https://goo.gl/maps/Nmf4giyLiauQaxNX7"
-                  target="blank"
-                  class="addresslink"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  href=""
+                  aria-label="Instagram"
+                  class="social-network instagram"
                 >
-              </li>
-              <li>
-                <a
-                  href="mailto:info@example.com"
-                  class="addresslink addresscolor"
-                >
-                  info@example.com
                 </a>
               </li>
-              <li>
-                <a href="tel:+380991111111" class="addresslink addresscolor">
-                  +38 099 111 11 11
+              <li class="footer-social-list">
+                <a href="" aria-label="Twitter" class="social-network twitter">
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a
+                  href=""
+                  aria-label="Facebook"
+                  class="social-network facebook"
+                >
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a
+                  href=""
+                  aria-label="Linkedin"
+                  class="social-network linkedin"
+                >
                 </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-join-us">
-          <div class="join-us">
-            <b class="footer-sent">
-              ПРИСОЕДИНЯЙТЕСЬ
-            </b>
           </div>
-          <ul class="footer-social">
-            <li class="footer-social-list">
-              <a
-                href=""
-                aria-label="Instagram"
-                class="social-network instagram"
-              >
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a href="" aria-label="Twitter" class="social-network twitter">
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a href="" aria-label="Facebook" class="social-network facebook">
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a href="" aria-label="Linkedin" class="social-network linkedin">
-              </a>
-            </li>
-          </ul>
         </div>
         <div class="sign-sent-block">
           <b class="sign-sents">Подпишитесь на рассылку</b>
 
           <div class="footer-email-form">
             <form class="footer-form">
-              <input type="email" name="email" placeholder="E-mail" />
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
               <button type="submit" class="footer-button">Подписаться</button>
             </form>
           </div>
         </div>
-
-        <script>
-          (() => {
-            document
-              .querySelector(".js-speaker-form")
-              .addEventListener("submit", (e) => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget).forEach((value, name) =>
-                  console.log(`${name}: ${value}`)
-                );
-
-                e.currentTarget.reset();
-              });
-          })();
-        </script>
       </div>
     </footer>
     <script src="./js/menu.js"></script>

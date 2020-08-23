@@ -4,19 +4,11 @@
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: $fotter-color;
-
-  @media screen and (min-width: 480px) {
-  }
-
-  .container {
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
-    }
-  }
 }
-
+.footer {
+  background-color: $fotter-color;
+  width: 100%;
+}
 .footer-join-us {
   display: flex;
   flex-direction: column;
@@ -25,12 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-join-us {
-  @media screen and (min-width: 1200px) {
-    margin-right: 155px;
-  }
 }
 
 .footer-sent {
@@ -54,10 +40,6 @@
 }
 .footer-social-list:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-form {
-  display: flex;
 }
 
 .footer-button {
@@ -86,7 +68,9 @@
   color: #ffffff;
   cursor: pointer;
 }
-
+.footer-input {
+  margin-bottom: 20px;
+}
 .footer-email-form input ::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -104,7 +88,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 0;
-  margin-left: 10px;
 
   &:focus,
   &:hover {
@@ -113,8 +96,7 @@
 }
 
 .footer-email-form input {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-top: 16px;
   padding-left: 15px;
@@ -194,6 +176,69 @@
   color: #ffffff;
 }
 
-.sign-sents-block {
-  flex-direction: column;
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+  }
+  .footer-logo,
+  .footer-join-us,
+  .sign-sent-block {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-logo,
+  .footer-join-us {
+    margin-bottom: 60px;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer .container {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  .footer-email-form {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-join-us {
+    margin-right: 94px;
+  }
+
+  .footer-input {
+    width: 358px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .footer-logo,
+  .footer-join-us,
+  .sign-sent-block {
+    text-align: left;
+  }
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tablet-footer {
+    margin-bottom: 0;
+  }
+  .footer-form {
+    display: flex;
+  }
 }
