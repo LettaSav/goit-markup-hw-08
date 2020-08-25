@@ -27,8 +27,6 @@
   text-align: center;
 }
 .team-list {
-  width: 354px;
-
   align-items: center;
   text-align: center;
 
@@ -79,6 +77,18 @@
 .team-sm-list :hover .team-social-icon,
 .team-sm-list :focus .team-social-icon {
   fill: $background-color;
+}
+@media screen and (max-width: 479px) {
+  .team-list {
+    width: 100%;
+  }
+  .team-list img {
+    width: 100%;
+  }
+  .team-social-icon,
+  .social-link-item {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .team-list {

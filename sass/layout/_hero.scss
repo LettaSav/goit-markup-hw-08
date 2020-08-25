@@ -16,24 +16,83 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: 400px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../img/header-img.jpg");
+  min-height: 400px;
+
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../img/hero/header-mobile.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../img/Hero/header-mobile@2x.jpg");
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../img/hero/header-tablet.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../img/Hero/header-tablet@2x.jpg");
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero-img {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../img/hero/header.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../img/Hero/header-@2x.jpg");
+    }
   }
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  width: 360px;
+
   height: 84px;
   margin-left: auto;
   margin-right: auto;
@@ -48,6 +107,11 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media screen and (min-width: 480px) {
+    .hero-title {
+      width: 360px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     height: 120px;
