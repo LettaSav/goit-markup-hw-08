@@ -966,6 +966,7 @@ header {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1474,6 +1475,7 @@ header {
 }
 
 .team-list {
+  width: 100%;
   align-items: center;
   text-align: center;
   background: #ffffff;
@@ -1557,7 +1559,8 @@ header {
     flex-wrap: wrap;
   }
   .team-list {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
+    overflow: hidden;
   }
   .team-list:nth-child(2n + 1) {
     margin-right: 30px;
@@ -1977,6 +1980,10 @@ header {
   padding-bottom: 20px;
 }
 
+.works img {
+  align-items: middle;
+}
+
 .animation-container {
   position: relative;
   overflow: hidden;
@@ -2030,6 +2037,8 @@ header {
   .portfolio-works {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    overflow: hidden;
   }
   .portfolio-works {
     margin-bottom: 30px;
@@ -2061,7 +2070,7 @@ header {
   .portfolio-works:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .portfolio-works:not(:last-child) {
+  .portfolio-works {
     margin-bottom: 30px;
   }
 }

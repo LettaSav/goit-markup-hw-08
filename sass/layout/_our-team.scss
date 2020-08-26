@@ -27,6 +27,7 @@
   text-align: center;
 }
 .team-list {
+  width: 100%;
   align-items: center;
   text-align: center;
 
@@ -111,7 +112,8 @@
     flex-wrap: wrap;
   }
   .team-list {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
+    overflow: hidden;
   }
   .team-list:nth-child(2n + 1) {
     margin-right: 30px;
