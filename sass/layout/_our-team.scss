@@ -121,6 +121,9 @@
   .team-list:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
+  .team-list img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .our-team {
