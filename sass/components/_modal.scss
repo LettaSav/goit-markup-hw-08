@@ -177,7 +177,7 @@
 .checkbox:checked ~ .checkbox-castom {
   background-color: $accent-color;
   border-color: $accent-color;
-  background-image: url("../img/sprite/iconcheck.svg");
+  background-image: url("../img/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -217,6 +217,11 @@
 @media screen and (max-width: 480px) {
   .form-sent {
     line-height: 1.5;
+  }
+  .hero-form-block,
+  .input-cont input,
+  .textarea-form {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

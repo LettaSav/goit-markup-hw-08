@@ -3,6 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.features-list:not(:last-child) {
+  margin-bottom: 30px;
+}
 .features-list .title {
   text-align: center;
 }

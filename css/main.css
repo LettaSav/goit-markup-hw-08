@@ -615,7 +615,7 @@ ul {
 .checkbox:checked ~ .checkbox-castom {
   background-color: #2196f3;
   border-color: #2196f3;
-  background-image: url("../img/sprite/iconcheck.svg");
+  background-image: url("../img/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -654,6 +654,11 @@ ul {
 @media screen and (max-width: 480px) {
   .form-sent {
     line-height: 1.5;
+  }
+  .hero-form-block,
+  .input-cont input,
+  .textarea-form {
+    width: 100%;
   }
 }
 
@@ -1257,7 +1262,7 @@ header {
 .checkbox:checked ~ .checkbox-castom {
   background-color: #2196f3;
   border-color: #2196f3;
-  background-image: url("../img/sprite/iconcheck.svg");
+  background-image: url("../img/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -1297,6 +1302,11 @@ header {
   .form-sent {
     line-height: 1.5;
   }
+  .hero-form-block,
+  .input-cont input,
+  .textarea-form {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1328,6 +1338,10 @@ header {
 .feauturesec {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.features-list:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features-list .title {
